@@ -25,7 +25,7 @@ let s:modified = {
   \\ }
 
 " Normal mode
-let s:N1 = [ "${uiGroups.gray6}" , "${uiGroups.gray4}" , "" , ""  ]
+let s:N1 = [ "${uiGroups.gray6}" , "${uiGroups.gray1}" , "" , ""  ]
 let s:N2 = [ "${uiGroups.gray6}" , "${uiGroups.gray3}" , "" , ""  ]
 let s:N3 = [ "${uiGroups.foreground}" , "${uiGroups.gray2}" , "" , ""  ]
 let g:airline#themes#ganymede#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
