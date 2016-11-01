@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "previm": "mkdirp autoload/airline/themes",
+    "previm": "mkdirp autoload/airline/themes colors",
     "vim": "npm-run-all vim:*",
-    "vim:theme": "babel-node src/index.js >> ganymede.vim",
+    "vim:theme": "babel-node src/index.js >> colors/ganymede.vim",
     "vim:airline": "babel-node src/airline.js >> autoload/airline/themes/ganymede.vim",
     "build": "npm run vim"
   },
