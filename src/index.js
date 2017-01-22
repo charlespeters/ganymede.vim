@@ -11,7 +11,7 @@ ${warning}
 function! s:highlight_helper(...)
   let l:syntax_group = a:1
   let l:foreground_color = a:2
-  let l:background_color = empty(a:3) ? "${uiGroups.background}" : a:3
+  let l:background_color = empty(a:3) ? "" : a:3
   let l:gui = a:0 == 3 ? "None" : a:4
 
   exec "highlight " . l:syntax_group . " guifg=" . l:foreground_color . " guibg=" . l:background_color . " gui=" . l:gui . " cterm=NONE term=NONE"
@@ -23,9 +23,7 @@ endfunction
 " ==================================================================
 
 " CORE
-set background=dark
 highlight clear
-set termguicolors
 set fillchars=""
 syntax on
 syntax reset
