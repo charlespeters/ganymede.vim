@@ -28,7 +28,8 @@ set fillchars=""
 syntax on
 syntax reset
 let g:colors_name = "ganymede"
-call s:highlight_helper("Normal", "${uiGroups.foreground}", "")
+let s:background = g:ganymede_solid_background ? "${uiGroups.background}" : ""
+call s:highlight_helper("Normal", "${uiGroups.foreground}", s:background)
 
 " NEOVIM TERMINAL MODE
 let g:terminal_color_0 = "${ansiGroups.normal.black}"

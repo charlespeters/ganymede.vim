@@ -8,7 +8,6 @@ Ganymede is a color scheme inspired by the icy coldness of the moons of Jupiter 
 
 This was designed using Neovim and will work in both terminal Vim and Neovim.
 
-
 ## Installation
 
 Add `charlespeters/vim-ganymede` to whatever plugin system you're using (Pathogen, Vundle, etc). In your `.vimrc` add:
@@ -19,6 +18,8 @@ colorscheme ganymede
 
 let g:airline_theme='ganymede'
 ```
+
+If you want a solid background set the `g:ganymede_solid_background` var to `1`.
 
 ## Colors
 
