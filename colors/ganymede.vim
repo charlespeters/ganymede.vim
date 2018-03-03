@@ -27,7 +27,8 @@ set fillchars=""
 syntax on
 syntax reset
 let g:colors_name = "ganymede"
-call s:highlight_helper("Normal", "#DCEBF5", "")
+let s:background = g:ganymede_solid_background ? "#093750" : ""
+call s:highlight_helper("Normal", "#DCEBF5", s:background)
 
 " NEOVIM TERMINAL MODE
 let g:terminal_color_0 = "#093750"
